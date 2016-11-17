@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            @keyframes preloaderAnimate {
+                from {
+                    transform: translate3d(-50%, -50%, 0) scale(1);
+                }
+
+                to {
+                    transform: translate3d(-50%, -50%, 0) scale(2);
+                }
+            }
+
+            .preloader{
+                position: fixed;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: white;
+                z-index: 1;
+            }
+            .preloader img{
+                width: 50%;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                animation: preloaderAnimate 1 alternate 10s forwards;
+            }
+        </style>
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Roboto" rel="stylesheet">
+    </head>
+    <body class="disable-scroll">
+
+        <div id="preloader" class="preloader">
+            <img src="img/spinner.svg" alt="Preloader Spinner">
+        </div>
+        
+        <header class="header">
+            <nav class="header__nav">
+                <ul class="header__menu">
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">Σημαντικές Ειδήσεις</a>
+                    </li>
+                    <li>
+                        <a href="#">Προσθήκη Widget</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact Us</a>
+                    </li>
+                </ul>
+                <!--<input class="header__search" type="search" value="Αναζήτηση...">-->
+            </nav>
+            <div id="burger-menu" class="header__burger">
+            <img src="img/menu.svg" alt="Burger Menu">
+            </div>
+            <img class="header__logo" src="img/logo.svg" alt="Presshub Logo">
+        </header>
+        <div class="wrapper">
+
+            <div class="article">
+                <div class="article__img" style="background-image: url('http://www.enikos.gr/images/resized/900_8bd2b2a7f04976d6db03eb9624ce2ea8.jpg');">
+                    <img src="http://www.protothema.gr/favicon.ico" alt="Website Logo">
+                </div>
+                
+                <div class="article__wrapper">
+                    <h1 class="article__title">Ο Καμμένος για τη δήλωση της Μπακογιάννη σχετικά με τον Σόιμπλε</h1>
+                    <span class="article__date">Πέμπτη 17 Νοεμβρίου 2016 19:14:49</span>
+                    
+                    <p class="article__summary">
+                        Ο Πρόεδρος των Ανεξαρτήτων Ελλήνων και υπουργός Εθνικής  Άμυνας, Πάνος Καμμένος, κληθείς να σχολιάσει τον χαρακτηρισμό "απρεπής" που χρησιμοποίησε η βουλευτής της ΝΔ Ντόρα Μπακογιάννη σχετικά με δήλωση του υπουργού Οικονομικών της Γερμανίας για...
+                    </p>
+
+                    <!--<a class="article__read-more">
+                        Διάβασε το
+                    </a>-->
+                </div>
+            </div>  
+        
+        </div>
+
+    <script src="js/bundle.js"></script>    
+    </body>
+</html>
